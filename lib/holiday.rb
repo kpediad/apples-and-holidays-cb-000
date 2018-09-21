@@ -61,10 +61,9 @@ def all_supplies_in_holidays(holiday_hash)
     value_hash.each do |holiday, supplies|
       print_str = "  "
       holiday.to_s.split("_").each {|word| print_str << word.capitalize + " "}
-      print_str.chomp(" ") << ": "
+      print_str.chomp!(" ") << ": "
       supplies.each {|supply| print_str << supply + ", "}
-      print_str.chomp(" ").chomp(",")
-      puts print_str
+      puts print_str.chomp!(" ,")
     end
   end
 end
