@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.split("_").each {|word| print_str << word.capitalize + " "}
       print_str.chomp(" ") + ": "
       supplies.each {|supply| print_str << supply + ", "}
-      puts print_str.chomp(" ").chomp(",")    
+      puts print_str.chomp(" ").chomp(",")
     end
   end
 end
